@@ -1,0 +1,14 @@
+http://localhost:8182/api/v1/accounts/login
+- Login uses id and password - true/false
+http://localhost:8182/api/v1/accounts/register
+- Register uses id, name, accountNumber, ifsc, mobile, type, password - String Response
+http://localhost:8182/api/v1/accounts/balance/{id}
+- Gets the balance in int
+http://localhost:8182/api/v1/accounts/changepwd/{id}/{oldpassword}/{newpassword}
+- Returns password change status in string
+http://localhost:8182/api/v1/accounts/below?balance=100
+- Returns list of accounts
+http://localhost:8182/api/v1/accounts/above?balance=100
+- Returns list of accounts
+http://localhost:8182/api/v1/transactions/transfer
+- Uses id, fromAccount, toAccount, ifsc, amount - String Response
